@@ -9,24 +9,28 @@ public class Snakeandladder {
 		System.out.println("Snake and ladder game");
 		int POSITION=0;
 		int Roll= (int) Math.floor((Math.random() * 10) %  6) + 1;
-		if (Roll==1) {
-			System.out.println(Roll);
+		switch (Roll) {
+		case 1:
+			System.out.println("Roll valur is: " + Roll);
 			POSITION= (POSITION + Roll);
-		}
-		else if (Roll==2) {
+		break;
+		case 2:
 			System.out.println("Roll value is: " + Roll);
-		}
-		else if (Roll==3) {
+		break;
+		case 3:
 			System.out.println("Roll value is: " + Roll);
-		}
-		else if (Roll==4) {
+		break;
+		case 4:
 			System.out.println("Roll value is: " + Roll);
-		}
-		else if (Roll==5) {
+		break;
+		case 5:	
 			System.out.println("Roll value is: " + Roll);
-		}
-		else {
+		break;
+		case 6:
 			System.out.println("Roll value is: " + Roll);
+		break;
+		default:
+			System.out.println("Roll not valid");
 		}
 		
 		int Check= (int) Math.floor((Math.random() * 10) %  3) + 1;
